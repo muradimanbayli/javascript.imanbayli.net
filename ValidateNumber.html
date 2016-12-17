@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validate Number Example</title>
+	<script type="text/javascript">
+		function validateNumber(event){
+			if(event.keyCode>=48 && event.keyCode<=57){
+				return true;
+			}
+			return false;
+		}
+	</script>
+</head>
+<body>
+<input type="type" name="number" onkeydown="return validateNumber(event);">
+</body>
+</html>
